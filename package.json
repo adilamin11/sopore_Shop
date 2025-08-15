@@ -10,7 +10,9 @@
     "postbuild": "copy dist\\index.html dist\\404.html",
     "preview": "vite preview",
     "predeploy": "npm run build && npm run postbuild",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "postbuild": "copyfiles dist/index.html dist/404.html"
+
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
