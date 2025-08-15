@@ -8,7 +8,6 @@
     "dev": "vite",
     "build": "vite build",
     "postbuild": "copyfiles -f dist/index.html dist/404.html",
-
     "preview": "vite preview",
     "predeploy": "npm run build && npm run postbuild",
     "deploy": "gh-pages -d dist"
